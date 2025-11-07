@@ -1,6 +1,6 @@
 ALGEBRAIC LEARNING OF TRANSFORMERS VIA REPRESENTATION THEORY AND GALOIS CONNECTIONS
 
-  bon-cdpshakilflynn@gmail.com
+  bon-cdp shakilflynn@gmail.com
 
   ABSTRACT. We prove that transformer attention over cyclic groups admits exact decomposition via irreducible characters, with learning reduced to closed-form least squares solutions.
   For content-dependent routing, we introduce conditional character weights via Galois connections, maintaining algebraic structure while enabling piecewise linear attention mechanisms.
