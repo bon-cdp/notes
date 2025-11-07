@@ -17,7 +17,7 @@ ALGEBRAIC LEARNING OF TRANSFORMERS VIA REPRESENTATION THEORY AND GALOIS CONNECTI
   Corollary 1.3. For $C_n$, any representation $V$ decomposes as $V = \bigoplus_{j=0}^{n-1} V_j$ where each $V_j$ is 1-dimensional.
 
   Definition 1.4. The character projection operator is:
-  $$\text{Proj}{\chi_j}(V) = \frac{1}{n} \sum{k=0}^{n-1} \overline{\chi_j(g^k)} \cdot \tau_k(V)$$
+  $$\text{Proj}{\chi_j}(V) = \frac{1}{n} \sum{k=0}{n-1} \overline{\chi_j(g^k)} \cdot \tau_k(V)$$
   where $\tau_k$ is rotation by $k$ positions.
 
   Theorem 1.5 (Orthogonality). $\langle \chi_i, \chi_j \rangle = n \cdot \delta_{ij}$
@@ -678,7 +678,7 @@ ALGEBRAIC LEARNING OF TRANSFORMERS VIA REPRESENTATION THEORY AND GALOIS CONNECTI
 
   Linear combination of character projections.
 
-  Formula: $\mathcal{A}(V; c) = \sum_{j=0}^{n-1} c_j \cdot \text{Proj}_{\chi_j}(V)$
+  Formula: $\mathcal{A}(V; c) = \sum_{j=0}{n-1} c_j \cdot \text{Proj}_{\chi_j}(V)$
 
   Learned part: The weights $c_j$ (learned via least squares)
 
