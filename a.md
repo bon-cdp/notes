@@ -52,8 +52,9 @@ ALGEBRAIC LEARNING OF TRANSFORMERS VIA REPRESENTATION THEORY AND GALOIS CONNECTI
   3. ALGEBRAIC LEARNING
 
   Problem 3.1. Given training set $(V_i, y_i){i=1}^N$ with $V_i \in \mathbb{C}^{n \times d}$, $y_i \in \mathbb{C}^d$, find:
-  $$c^* = \arg\min_c \sum{i=1}^N \mathcal{A}(V_i; c)_{-1} - y_i^2$$
-  where subscript $-1$ denotes last position.
+  $$c^* = \arg\min_c \sum{i=1}^{N} \left\mathcal{A}(V_i; c)_{[-1]} - y_i\right^2$$
+  where subscript $[-1]$ denotes the last position (last element of the sequence).
+
 
   Theorem 3.2 (Closed-Form Solution). Define $A \in \mathbb{C}^{Nd \times n}$ by:
   $$A_{(i-1)d + \ell, j} = [\text{Proj}{\chi_j}(V_i){-1}]\ell$$
