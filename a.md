@@ -712,4 +712,4 @@ ALGEBRAIC LEARNING OF TRANSFORMERS VIA REPRESENTATION THEORY AND GALOIS CONNECTI
 
 ~~
 
-  bon-cdpshakilflynn@gmail.com
+  bon-cdp shakilflynn@gmail.com
