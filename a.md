@@ -1,5 +1,4 @@
-  ---
-  ALGEBRAIC LEARNING OF TRANSFORMERS VIA REPRESENTATION THEORY AND GALOIS CONNECTIONS
+ALGEBRAIC LEARNING OF TRANSFORMERS VIA REPRESENTATION THEORY AND GALOIS CONNECTIONS
 
   bon-cdpshakilflynn@gmail.com
 
@@ -41,11 +40,9 @@
   Theorem 2.3 (Rotation Equivariance). $\mathcal{A}(\tau_k(V); c) = \tau_k(\mathcal{A}(V; c))$ for all $k$.
 
   Proof.
-  \begin{align*}
-  \mathcal{A}(\tau_k(V); c) &= \sum_j c_j \cdot \frac{1}{n} \sum_m \overline{\chi_j(g^m)} \tau_m(\tau_k(V))
-  &= \sum_j c_j \cdot \frac{1}{n} \sum_m \overline{\chi_j(g^m)} \tau_{m+k}(V)
-  &= \tau_k\left(\sum_j c_j \cdot \frac{1}{n} \sum_m \overline{\chi_j(g^m)} \tau_m(V)\right) = \tau_k(\mathcal{A}(V; c))
-  \end{align*}
+  $$\mathcal{A}(\tau_k(V); c) = \sum_j c_j \cdot \frac{1}{n} \sum_m \overline{\chi_j(g^m)} \tau_m(\tau_k(V))$$
+  $$= \sum_j c_j \cdot \frac{1}{n} \sum_m \overline{\chi_j(g^m)} \tau_{m+k}(V)$$
+  $$= \tau_k\left(\sum_j c_j \cdot \frac{1}{n} \sum_m \overline{\chi_j(g^m)} \tau_m(V)\right) = \tau_k(\mathcal{A}(V; c))$$
   by translation of summation index. □
 
   Corollary 2.4. Character attention is equivariant under the action of $C_n$.
@@ -54,7 +51,7 @@
   3. ALGEBRAIC LEARNING
 
   Problem 3.1. Given training set $(V_i, y_i){i=1}^N$ with $V_i \in \mathbb{C}^{n \times d}$, $y_i \in \mathbb{C}^d$, find:
-  $$c^* = \arg\min_c \sum_{i=1}^N \left\mathcal{A}(V_i; c)_{-1} - y_i\right^2$$
+  $$c^* = \arg\min_c \sum{i=1}^N \mathcal{A}(V_i; c)_{-1} - y_i^2$$
   where subscript $-1$ denotes last position.
 
   Theorem 3.2 (Closed-Form Solution). Define $A \in \mathbb{C}^{Nd \times n}$ by:
@@ -85,12 +82,10 @@
   Proof. Linearity in $V$ follows from linearity of projection operators. The map $k \mapsto c^{(k)}$ partitions $\mathcal{K}$ into equivalence classes with constant weights. □
 
   Definition 4.4 (Galois Connection). Define:
-  \begin{align*}
-  F : \mathcal{P}(\mathcal{K}) &\to \mathcal{P}(0, \ldots, n-1)
-  F(S) &= j \mid \exists k \in S : c_j^{(k)} \neq 0
-  G : \mathcal{P}(0, \ldots, n-1) &\to \mathcal{P}(\mathcal{K})
-  G(T) &= k \mid \exists j \in T : c_j^{(k)} \neq 0
-  \end{align*}
+  $$F : \mathcal{P}(\mathcal{K}) \to \mathcal{P}(0, \ldots, n-1)$$
+  $$F(S) = j \mid \exists k \in S : c_j^{(k)} \neq 0$$
+  $$G : \mathcal{P}(0, \ldots, n-1) \to \mathcal{P}(\mathcal{K})$$
+  $$G(T) = k \mid \exists j \in T : c_j^{(k)} \neq 0$$
 
   Theorem 4.5. $(F, G)$ forms a Galois connection: $S \subseteq G(F(S))$ and $T \subseteq F(G(T))$.
 
@@ -161,7 +156,7 @@
   Experiment 8.1 (Linear Patterns). Dataset $\mathcal{D}_{\text{count}} = ([a, a+s, a+2s, a+3s], a+4s) \mid a, s \in \mathbb{Z}$ with $s \in 1,2,3,5$, $N=300$ training samples.
 
   Result 8.2. Single character weights via Theorem 3.2:
-  - Test accuracy: $0.95$ ($95/100$)
+  - Test accuracy: $0.95$ (95/100)
   - Matrix rank: $81/128$
   - Training time: $O(1)$ (single matrix solve)
 
@@ -170,7 +165,7 @@
   Baseline (linear regression without conditions): accuracy $0.16$.
 
   Result 8.4. Conditional character weights via Algorithm 4.6:
-  - Overall accuracy: $0.74$ ($74/100$)
+  - Overall accuracy: $0.74$ (74/100)
   - Per-condition accuracy: $(0.50, 1.00, 0.67)$ for $k \in 0,1,2$
   - Matrix rank: $4/4$ per condition (full rank)
 
