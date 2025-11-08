@@ -1,4 +1,4 @@
-ALGEBRAIC LEARNING OF TRANSFORMERS VIA REPRESENTATION THEORY AND GALOIS CONNECTIONS - NOW OUTDATED, SEE https://github.com/bon-cdp/notes/edit/main/a.pdf for updated idea. 
+ALGEBRAIC LEARNING OF TRANSFORMERS VIA REPRESENTATION THEORY AND GALOIS CONNECTIONS - NOW OUTDATED, SEE [https://github.com/bon-cdp/notes/edit/main/a.pdf](https://github.com/bon-cdp/notes/blob/main/a.pdf) for updated idea. 
 
   bon-cdp shakilflynn@gmail.com
 
