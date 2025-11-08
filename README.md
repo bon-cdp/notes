@@ -1,1 +1,1 @@
-Algebraic Learning of Transformers via Representation Theory and Galois Connections
+notes i will reference from elsewhere
