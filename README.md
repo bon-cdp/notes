@@ -1,1 +1,1 @@
-notes i will reference from elsewhere
+check out my repos for implementations of some of these. 
